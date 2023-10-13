@@ -1,21 +1,3 @@
-using System;
-using System.Collections.Generic;
-using UnityEngine.Purchasing.Extension;
-
-namespace UnityEngine.Purchasing
-{
-    internal class SimpleCatalogProvider : ICatalogProvider
-    {
-        private readonly Action<Action<HashSet<ProductDefinition>>> m_Func;
-
-        internal SimpleCatalogProvider(Action<Action<HashSet<ProductDefinition>>> func)
-        {
-            m_Func = func;
-        }
-
-        public void FetchProducts(Action<HashSet<ProductDefinition>> callback)
-        {
-            m_Func?.Invoke(callback);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c992bfccdbddd7166bbfcd8b6ea5fa76f0192a5b3ffd2d601495f88a262be017
+size 548

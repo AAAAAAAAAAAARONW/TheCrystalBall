@@ -1,17 +1,3 @@
-using UnityEditor;
-using UnityEngine.Analytics;
-
-namespace UnityEditor.Purchasing
-{
-    internal static class PurchasingServiceAnalyticsRegistrar
-    {
-        const int k_MaxEventsPerHour = 100;
-        const int k_MaxItems = 10;
-        const string k_VendorKey = "unity.services.core.editor";
-
-        internal static AnalyticsResult RegisterEvent(EditorAnalyticsDataSignature eventSig)
-        {
-            return EditorAnalytics.RegisterEventWithLimit(eventSig.eventName, k_MaxEventsPerHour, k_MaxItems, k_VendorKey, eventSig.version);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:555e7c3deb2c990eb6194d0946c3ace1f49a872a6108c188ce5c20d72f2d866d
+size 560

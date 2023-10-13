@@ -1,34 +1,3 @@
-#if UNITY_EDITOR
-namespace UnityEngine.Monetization
-{
-    public class EditorNativePromoAdapter : INativePromoAdapter
-    {
-        public EditorNativePromoAdapter(PromoAdPlacementContent placementContent)
-        {
-            metadata = placementContent.metadata;
-        }
-
-        public PromoMetadata metadata { get; }
-
-        public void OnShown()
-        {
-            OnShown(PromoShowType.Full);
-        }
-
-        public void OnShown(PromoShowType type)
-        {
-            Debug.LogFormat("Native promo was shown: {0}", type);
-        }
-
-        public void OnClosed()
-        {
-            Debug.LogFormat("Native promo was closed.");
-        }
-
-        public void OnClicked()
-        {
-            Debug.LogFormat("Native promo was clicked");
-        }
-    }
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c2a2ac09facb0294ceb9471a547174463554c6ae5675a8b5e61d4f7cb504df5
+size 785

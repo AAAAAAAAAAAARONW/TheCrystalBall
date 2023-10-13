@@ -1,27 +1,3 @@
-using System.Collections.Generic;
-using UnityEngine.Purchasing;
-
-namespace UnityEditor.Purchasing
-{
-    static class NetworkingUtils
-    {
-        internal static string GetProjectGuid()
-        {
-            return CloudProjectSettings.projectId;
-        }
-
-        public static string Base64Encode(string plainText)
-        {
-            var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
-            return System.Convert.ToBase64String(plainTextBytes);
-        }
-
-        internal static string GetValueFromJsonDictionary(string rawJson, string key)
-        {
-            var container = (Dictionary<string, object>)MiniJson.JsonDecode(rawJson);
-
-            container.TryGetValue(key, out var value);
-            return value as string;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d7fce20fb7cd2bcd4983a362157226f43a824de3e10c8c3a3005384880d93e0b
+size 778

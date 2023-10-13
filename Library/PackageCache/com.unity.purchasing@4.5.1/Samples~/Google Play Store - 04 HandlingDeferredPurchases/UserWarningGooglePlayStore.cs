@@ -1,25 +1,3 @@
-using UnityEngine;
-using UnityEngine.Purchasing;
-using UnityEngine.UI;
-
-namespace Samples.Purchasing.GooglePlay.HandlingDeferredPurchases
-{
-    public class UserWarningGooglePlayStore : MonoBehaviour
-    {
-        public Text warningText;
-
-        public void UpdateWarningText()
-        {
-            var currentAppStore = StandardPurchasingModule.Instance().appStore;
-
-            var warningMessage = currentAppStore != AppStore.GooglePlay ?
-                "This sample is meant to be tested using the Google Play Store.\n" +
-                $"The currently selected store is: {currentAppStore}.\n" +
-                "Build the project for Android and use the Google Play Store.\n\n" +
-                "See README for more information and instructions on how to test this sample."
-                : "";
-
-            warningText.text = warningMessage;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e00dbcca82fb84efe14cc31618737c302e8e229b67acf8cc7c1aa0f1420f23ca
+size 873

@@ -1,26 +1,3 @@
-using System;
-using Unity.Services.Core.Internal;
-#if UNITY_2020_2_OR_NEWER
-using UnityEngine.Scripting;
-#endif
-
-namespace Unity.Services.Wire.Internal
-{
-    /// <summary>
-    /// IWire allows the creation of disposable <see cref="IChannel"/> objects.
-    /// </summary>
-#if UNITY_2020_2_OR_NEWER
-    [RequireImplementors]
-#endif
-    public interface IWire : IServiceComponent
-    {
-        /// <summary>
-        /// CreateChannel is a <see cref="IChannel"/> factory. It will generate an object enabling the subscription to a Wire channel.
-        /// </summary>
-        /// <param name="tokenProvider">Will be used to obtain a subscription token whenever the user calls <see cref="IChannel.SubscribeAsync"/>
-        /// or Wire might choose to use it whenever a refreshed token is needed. Make sure that this <see cref="IChannelTokenProvider"/> can never provide
-        /// an outdated or bad token.</param>
-        /// <returns>A <see cref="IChannel"/> object.</returns>
-        IChannel CreateChannel(IChannelTokenProvider tokenProvider);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e298c05403574f69c513ac266f4b4d131d0e2ddc48cbe374205f6b932116d0c0
+size 1051

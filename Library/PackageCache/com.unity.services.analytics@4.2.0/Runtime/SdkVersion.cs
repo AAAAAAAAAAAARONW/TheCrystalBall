@@ -1,12 +1,3 @@
-namespace Unity.Services.Analytics
-{
-    public static class SdkVersion
-    {
-        /// <summary>
-        /// The version of the Analytics SDK.
-        /// This value should always match what is in the package.json file for this package,
-        /// to provide accurate SDK versions to the analytics data classes.
-        /// </summary>
-        public static readonly string SDK_VERSION = "4.2.0";
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b8ebf7ffc2246641a0ef81c8effd99061037d124a76c7005dc7646ba14449ee7
+size 408

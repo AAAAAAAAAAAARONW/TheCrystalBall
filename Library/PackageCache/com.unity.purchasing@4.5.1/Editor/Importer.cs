@@ -1,15 +1,3 @@
-using System;
-using UnityEditor.Build;
-using UnityEditor.Purchasing;
-
-namespace UnityEditor
-{
-    [InitializeOnLoad]
-    internal class PurchasingImporter
-    {
-        static PurchasingImporter()
-        {
-            PurchasingSettings.ApplyEnableSettings(EditorUserBuildSettings.activeBuildTarget);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:32c7a4d9b4d8cd891a6185622cb854505331157b692a9c432a1cc99774dbeba8
+size 320

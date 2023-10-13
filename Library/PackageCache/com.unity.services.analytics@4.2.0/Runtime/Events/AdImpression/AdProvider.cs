@@ -1,22 +1,3 @@
-namespace Unity.Services.Analytics
-{
-    public enum AdProvider
-    {
-        AdColony = 0,
-        AdMob = 1,
-        Amazon = 2,
-        AppLovin = 3,
-        ChartBoost = 4,
-        Facebook = 5,
-        Fyber = 6,
-        Hyprmx = 7,
-        Inmobi = 8,
-        Maio = 9,
-        Pangle = 10,
-        Tapjoy = 11,
-        UnityAds = 12,
-        Vungle = 13,
-        IrnSource = 14,
-        Other = 15
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:39e5d5dd6c1c65f07c7f7bd116eca3e1b342bf01dc05710cd091f7ad8a5fa9bb
+size 413

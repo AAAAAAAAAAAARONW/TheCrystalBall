@@ -1,22 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace Unity.Services.Core
-{
-    class ExternalUserIdProperty
-    {
-        public event Action<string> UserIdChanged;
-
-        string m_UserId;
-
-        public string UserId
-        {
-            get => m_UserId;
-            set
-            {
-                m_UserId = value;
-                UserIdChanged?.Invoke(m_UserId);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a033a4f14f7031d622c1d086638ce3cb7657623cbe2e4fb15860d5762e7866b0
+size 396

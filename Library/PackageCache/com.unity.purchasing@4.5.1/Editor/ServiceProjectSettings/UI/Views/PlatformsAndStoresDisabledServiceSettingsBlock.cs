@@ -1,21 +1,3 @@
-using System;
-using System.Collections.Generic;
-using UnityEngine.UIElements;
-
-namespace UnityEditor.Purchasing
-{
-    class PlatformsAndStoresDisabledServiceSettingsBlock : PlatformsAndStoresServiceSettingsBlock
-    {
-        protected override void PopulateStateSensitiveSections(VisualElement rootElement, VisualElement currentBuildTargetSection, VisualElement otherStoresSection)
-        {
-            currentBuildTargetSection.parent.Remove(currentBuildTargetSection);
-            currentStoreSection.parent.Remove(currentStoreSection);
-            otherStoresSection.parent.Remove(otherStoresSection);
-        }
-
-        protected override IEnumerable<string> GetStoresForState()
-        {
-            return GetAllStores();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d03c4054f37def6d7cbe62f3a31f199f2daebb12021d30626575df0b36d2a604
+size 748

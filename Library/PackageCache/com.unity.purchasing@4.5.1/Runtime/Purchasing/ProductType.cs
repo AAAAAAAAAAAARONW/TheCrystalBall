@@ -1,26 +1,3 @@
-namespace UnityEngine.Purchasing
-{
-    /// <summary>
-    /// Types of a product, relevant to the store subsystem.
-    /// </summary>
-    public enum ProductType
-    {
-        /// <summary>
-        /// Consumables may be purchased more than once.
-        ///
-        /// Purchase history is not typically retained by store
-        /// systems once consumed.
-        /// </summary>
-        Consumable,
-
-        /// <summary>
-        /// Non consumables cannot be repurchased and are owned indefinitely.
-        /// </summary>
-        NonConsumable,
-
-        /// <summary>
-        /// Subscriptions have a finite window of validity.
-        /// </summary>
-        Subscription
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9b2649137269e97472c6e9ba9fc6df60ea17013386e0fe222ea02c0993d7c148
+size 682

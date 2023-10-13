@@ -1,17 +1,3 @@
-namespace Unity.Services.Analytics
-{
-    interface ICoreStatsHelper
-    {
-        void SetCoreStatsConsent(bool userProvidedConsent);
-    }
-
-    class CoreStatsHelper : ICoreStatsHelper
-    {
-        public void SetCoreStatsConsent(bool userProvidedConsent)
-        {
-#if ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT
-            UnityEngine.Analytics.UGSAnalyticsInternalTools.SetPrivacyStatus(userProvidedConsent);
-#endif
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a682b01a2b3e5addf97816571fbf4c7f5082896e3cb3f2eb794be54eaae5f6df
+size 441

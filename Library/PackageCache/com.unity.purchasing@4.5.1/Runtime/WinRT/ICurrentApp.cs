@@ -1,25 +1,3 @@
-using System;
-using System.Collections.Generic;
-using Windows.ApplicationModel.Store;
-using Windows.Foundation;
-
-namespace UnityEngine.Purchasing.Default
-{
-    interface ICurrentApp
-    {
-        // Used for setting up test data by our mock implementation.
-        void BuildMockProducts(List<WinProductDescription> products);
-
-        IAsyncOperation<IReadOnlyList<UnfulfilledConsumable>> GetUnfulfilledConsumablesAsync();
-
-        IAsyncOperation<ListingInformation> LoadListingInformationAsync();
-
-        IAsyncOperation<FulfillmentResult> ReportConsumableFulfillmentAsync(string productId, Guid transactionId);
-
-        IAsyncOperation<PurchaseResults> RequestProductPurchaseAsync(string productId);
-
-        IAsyncOperation<string> RequestAppReceiptAsync();
-
-        LicenseInformation LicenseInformation { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:208467b0a8a4b59e970492610d48ea8a34d0e794f055f5bf2a973074633d8fbb
+size 828

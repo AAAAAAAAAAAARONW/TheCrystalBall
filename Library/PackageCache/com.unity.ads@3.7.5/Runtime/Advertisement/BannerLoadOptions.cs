@@ -1,21 +1,3 @@
-namespace UnityEngine.Advertisements
-{
-    /// <summary>
-    /// Pass these options back to the SDK to notify it of events when loading the banner.
-    /// </summary>
-    public class BannerLoadOptions
-    {
-        public delegate void LoadCallback();
-        public delegate void ErrorCallback(string message);
-
-        /// <summary>
-        /// This callback fires when the banner loads successfully and is available to show.
-        /// </summary>
-        public LoadCallback loadCallback { get; set; }
-
-        /// <summary>
-        /// This callback fires when an error occurs while loading the banner. If invoked, assume that the banner did not load.
-        /// </summary>
-        public ErrorCallback errorCallback { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e910ab3a18c8e531a6991a458d43d00d3ea3ae583e643eaba6b0bb18b4361b41
+size 746

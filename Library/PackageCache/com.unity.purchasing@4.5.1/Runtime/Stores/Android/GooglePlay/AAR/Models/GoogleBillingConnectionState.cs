@@ -1,14 +1,3 @@
-namespace UnityEngine.Purchasing
-{
-    /// <summary>
-    /// This is C# representation of the Java Class Purchase
-    /// <a href="https://developer.android.com/reference/com/android/billingclient/api/Purchase">See more</a>
-    /// </summary>
-    enum GoogleBillingConnectionState
-    {
-        Disconnected = 0,
-        Connecting = 1,
-        Connected = 2,
-        Closed = 3
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:19b39c1ce5767edf3e5e9a93b769ee442e7f99b16c7643a2551565d52236a7e0
+size 387

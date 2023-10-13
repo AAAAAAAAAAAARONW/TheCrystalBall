@@ -1,24 +1,3 @@
-namespace UnityEditor.Purchasing
-{
-    class PurchasingEnabledState : BasePurchasingState
-    {
-        internal const string k_StateNameEnabled = "EnabledState";
-
-        public PurchasingEnabledState(SimpleStateMachine<bool> stateMachine)
-            : base(k_StateNameEnabled, stateMachine)
-        {
-            m_UIBlocks.Add(new GooglePlayConfigurationSettingsBlock());
-            m_UIBlocks.Add(new AppleConfigurationSettingsBlock());
-            m_UIBlocks.Add(new IapCatalogServiceSettingsBlock());
-
-            ModifyActionForEvent(false, HandleDisabling);
-        }
-
-        SimpleStateMachine<bool>.State HandleDisabling(bool raisedEvent)
-        {
-            return stateMachine.GetStateByName(PurchasingDisabledState.k_StateNameDisabled);
-        }
-
-        internal override bool IsEnabled() => true;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e02428fe9739c588ca0e26f9c95d97ccb8fe966dd32f82b53f80e9ca87cbcd70
+size 826

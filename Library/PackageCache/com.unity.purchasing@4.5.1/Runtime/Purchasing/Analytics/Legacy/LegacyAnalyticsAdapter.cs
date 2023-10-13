@@ -1,35 +1,3 @@
-using System.Collections.Generic;
-
-namespace UnityEngine.Purchasing
-{
-    class LegacyAnalyticsAdapter : IAnalyticsAdapter
-    {
-        readonly ILegacyUnityAnalytics m_LegacyAnalytics;
-
-        public LegacyAnalyticsAdapter(ILegacyUnityAnalytics legacyAnalytics)
-        {
-            m_LegacyAnalytics = legacyAnalytics;
-        }
-
-        public void SendTransactionEvent(Product product)
-        {
-            m_LegacyAnalytics.SendTransactionEvent(product.definition.storeSpecificId,
-                product.metadata.localizedPrice,
-                product.metadata.isoCurrencyCode,
-                product.receipt,
-                null);
-        }
-
-        public void SendTransactionFailedEvent(Product product, PurchaseFailureReason reason)
-        {
-            var data = new Dictionary<string, object>()
-            {
-                {"productID", product.definition.storeSpecificId},
-                {"reason", reason},
-                {"price", product.metadata.localizedPrice},
-                {"currency", product.metadata.isoCurrencyCode}
-            };
-            m_LegacyAnalytics.SendCustomEvent("unity.PurchaseFailed", data);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:93a638c3003adce6295cd41542d51a015494a5171a3b997515384d4a1cb05e2a
+size 1166

@@ -1,17 +1,3 @@
-using System;
-
-namespace UnityEngine.Purchasing
-{
-    /// <summary>
-    /// Interface providing access to various store extensions.
-    /// </summary>
-    public interface IExtensionProvider
-    {
-        /// <summary>
-        /// Get an implementation of a store extension specified by the template parameter.
-        /// </summary>
-        /// <typeparam name="T"> Implementation of <c>IStoreExtension</c> </typeparam>
-        /// <returns> The store extension requested. </returns>
-        T GetExtension<T>() where T : IStoreExtension;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:076bad280ecb2d135861da7e02ff9c3fe0c4b4a223fa5cac72aabe018eca5e6b
+size 548

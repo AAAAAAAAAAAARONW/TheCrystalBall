@@ -1,23 +1,3 @@
-using UnityEditor;
-
-namespace UnityEngine.Advertisements.Editor
-{
-    static class AdsDashboardUrls
-    {
-        const string k_HomeFormat = "https://dashboard.unity3d.com/organizations/{0}/projects/{1}/monetization";
-
-        public static string GetOverviewUrl()
-            => FillUrlWithOrganizationAndProjectIds($"{k_HomeFormat}/overview");
-
-        static string FillUrlWithOrganizationAndProjectIds(string url)
-        {
-#if ENABLE_EDITOR_GAME_SERVICES
-            var organization = CloudProjectSettings.organizationKey;
-#else
-            var organization = CloudProjectSettings.organizationId;
-#endif
-            var filledUrl = string.Format(url, organization, CloudProjectSettings.projectId);
-            return filledUrl;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:14fd1f5c8f6301b4b67ed0e334cd08f47f38e3a601d45aacfdc9a5726e3733b7
+size 753

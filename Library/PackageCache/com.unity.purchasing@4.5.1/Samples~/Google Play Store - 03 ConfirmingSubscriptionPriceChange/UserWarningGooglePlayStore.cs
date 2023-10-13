@@ -1,25 +1,3 @@
-using UnityEngine;
-using UnityEngine.Purchasing;
-using UnityEngine.UI;
-
-namespace Samples.Purchasing.GooglePlay.ConfirmingSubscriptionPriceChange
-{
-    public class UserWarningGooglePlayStore : MonoBehaviour
-    {
-        public Text warningText;
-
-        public void UpdateWarningText()
-        {
-            var currentAppStore = StandardPurchasingModule.Instance().appStore;
-
-            var warningMessage = currentAppStore != AppStore.GooglePlay ?
-                "This sample is meant to be tested using the Google Play Store.\n" +
-                $"The currently selected store is: {currentAppStore}.\n" +
-                "Build the project for Android and use the Google Play Store.\n\n" +
-                "See README for more information and instructions on how to test this sample."
-                : "";
-
-            warningText.text = warningMessage;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7ada42c5d8ddd48208386f7f1ca09eed615324cb5982e1cd00526d66d9e557be
+size 881

@@ -1,25 +1,3 @@
-using UnityEngine;
-using UnityEngine.Purchasing;
-using UnityEngine.UI;
-
-namespace Samples.Purchasing.AppleAppStore.GettingProductDetails
-{
-    public class UserWarningAppleAppStore : MonoBehaviour
-    {
-        public Text warningText;
-
-        public void UpdateWarningText()
-        {
-            var currentAppStore = StandardPurchasingModule.Instance().appStore;
-
-            var warningMessage = currentAppStore != AppStore.AppleAppStore ?
-                "This sample is meant to be tested using the Apple App Store.\n" +
-                $"The currently selected store is: {currentAppStore}.\n" +
-                "Build the project for iOS and use the Apple App Store.\n\n" +
-                "See README for more information and instructions on how to test this sample."
-                : "";
-
-            warningText.text = warningMessage;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b45689796a1c05308ecf32bdd8b6bf7de5dc8b756f6551b349aa5356bc188f7b
+size 865

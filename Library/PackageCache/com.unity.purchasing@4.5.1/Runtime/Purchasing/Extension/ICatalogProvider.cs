@@ -1,18 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-
-namespace UnityEngine.Purchasing.Extension
-{
-    /// <summary>
-    /// Abstract Catalog Provider, facilitating the retrieval of a catalog's products.
-    /// </summary>
-    public interface ICatalogProvider
-    {
-        /// <summary>
-        /// Fetch all the products in the catalog, asynchronously.
-        /// </summary>
-        /// <param name="callback"> Event containing the set of products upon completion. </param>
-        void FetchProducts(Action<HashSet<ProductDefinition>> callback);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2cd3d66f7077ba319d88b9ba153e7d367e8f3dcea40cea4086feb8c714fe5a9e
+size 580

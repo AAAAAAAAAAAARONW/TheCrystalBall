@@ -1,22 +1,3 @@
-namespace UnityEngine.Purchasing
-{
-    internal interface INativeAppleStore : INativeStore
-    {
-        void SetUnityPurchasingCallback(UnityPurchasingCallback AsyncCallback);
-        void RestoreTransactions();
-        void RefreshAppReceipt();
-        void AddTransactionObserver();
-        void SetApplicationUsername(string applicationUsername);
-        string appReceipt { get; }
-        bool canMakePayments { get; }
-        bool simulateAskToBuy { get; set; }
-        void FetchStorePromotionOrder();
-        void SetStorePromotionOrder(string json);
-        void FetchStorePromotionVisibility(string productId);
-        void SetStorePromotionVisibility(string productId, string visibility);
-        string GetTransactionReceiptForProductId(string productId);
-        void InterceptPromotionalPurchases();
-        void ContinuePromotionalPurchases();
-        void PresentCodeRedemptionSheet();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f6628b7acefffe00ef60fc6479cbb260df4e5e6fdae6312451df6cebd52e627e
+size 910

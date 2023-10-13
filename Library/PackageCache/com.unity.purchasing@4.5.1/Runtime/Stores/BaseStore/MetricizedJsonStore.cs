@@ -1,29 +1,3 @@
-using System.Collections.ObjectModel;
-using UnityEngine.Purchasing.Telemetry;
-
-namespace UnityEngine.Purchasing
-{
-    class MetricizedJsonStore : JSONStore
-    {
-        readonly ITelemetryMetricsService m_TelemetryMetricsService;
-
-        public MetricizedJsonStore(ITelemetryMetricsService telemetryMetricsService)
-        {
-            m_TelemetryMetricsService = telemetryMetricsService;
-        }
-
-        public override void RetrieveProducts(ReadOnlyCollection<ProductDefinition> products)
-        {
-            m_TelemetryMetricsService.ExecuteTimedAction(
-                () => base.RetrieveProducts(products),
-                TelemetryMetricDefinitions.retrieveProductsName);
-        }
-
-        public override void Purchase(ProductDefinition product, string developerPayload)
-        {
-            m_TelemetryMetricsService.ExecuteTimedAction(
-                () => base.Purchase(product, developerPayload),
-                TelemetryMetricDefinitions.initPurchaseName);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f553a6e60eac7b93a4927eaa8eeaf4cf185dd09da78b512eededed148f3d9fa
+size 999

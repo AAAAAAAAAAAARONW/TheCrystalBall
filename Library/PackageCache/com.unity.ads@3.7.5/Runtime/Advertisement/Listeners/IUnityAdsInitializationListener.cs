@@ -1,20 +1,3 @@
-using System;
-
-namespace UnityEngine.Advertisements {
-    public interface IUnityAdsInitializationListener {
-
-        /// <summary>
-        /// Callback which notifies UnityAds has been successfully initialized.
-        /// </summary>
-        void OnInitializationComplete();
-
-        /// <summary>
-        /// Callback which notifies UnityAds has failed initialization with error message and error category.
-        /// </summary>
-        /// <param name="error"> If UnityAdsInitializationError.INTERNAL_ERROR, initialization failed due to environment or internal services
-        /// If UnityAdsInitializationError.INVALID_ARGUMENT, initialization failed due to invalid argument(e.g. game ID)
-        /// If UnityAdsInitializationError.AD_BLOCKER_DETECTED, initialization failed due to url being blocked</param>
-        /// <param name="message">Human-readable error message</param>
-        void OnInitializationFailed(UnityAdsInitializationError error, string message);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:095d99e99a70f0ec00fe6c007856d23bf5157325e22aa3a94021fbde863ad460
+size 981

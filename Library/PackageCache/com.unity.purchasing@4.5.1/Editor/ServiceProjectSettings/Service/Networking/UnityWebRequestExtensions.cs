@@ -1,25 +1,3 @@
-using UnityEngine.Networking;
-
-namespace UnityEditor.Purchasing
-{
-    static class UnityWebRequestExtensions
-    {
-        public static bool IsResultTransferSuccess(this UnityWebRequest request)
-        {
-#if UNITY_2020_1_OR_NEWER
-            return request.isDone && request.result == UnityWebRequest.Result.Success;
-#else
-            return request.isDone && !request.isNetworkError && !request.isHttpError;
-#endif
-        }
-
-        public static bool IsResultProtocolError(this UnityWebRequest request)
-        {
-#if UNITY_2020_1_OR_NEWER
-            return request.isDone && request.result == UnityWebRequest.Result.ProtocolError;
-#else
-            return request.isDone && request.isHttpError;
-#endif
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:251f253a9dcb36dc8f278e17ad641935b441928999a9ef8556ce14976c4b284f
+size 726

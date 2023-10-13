@@ -1,34 +1,3 @@
-using System;
-using System.Diagnostics;
-using UnityEngine;
-using Debug = UnityEngine.Debug;
-
-namespace Unity.Services.Core.Internal
-{
-    static class CoreLogger
-    {
-        internal const string Tag = "[ServicesCore]";
-        internal const string VerboseLoggingDefine = "ENABLE_UNITY_SERVICES_CORE_VERBOSE_LOGGING";
-        const string k_TelemetryLoggingDefine = "ENABLE_UNITY_SERVICES_CORE_TELEMETRY_LOGGING";
-
-        public static void Log(object message) => Debug.unityLogger.Log(Tag, message);
-        public static void LogWarning(object message) => Debug.unityLogger.LogWarning(Tag, message);
-        public static void LogError(object message) => Debug.unityLogger.LogError(Tag, message);
-
-        public static void LogException(Exception exception) =>
-            Debug.unityLogger.Log(LogType.Exception, Tag, exception);
-
-        [Conditional("UNITY_ASSERTIONS")]
-        public static void LogAssertion(object message) => Debug.unityLogger.Log(LogType.Assert, Tag, message);
-
-#if !ENABLE_UNITY_SERVICES_VERBOSE_LOGGING
-        [Conditional(VerboseLoggingDefine)]
-#endif
-        public static void LogVerbose(object message) => Debug.unityLogger.Log(Tag, message);
-
-#if !ENABLE_UNITY_SERVICES_TELEMETRY_LOGGING
-        [Conditional(k_TelemetryLoggingDefine)]
-#endif
-        public static void LogTelemetry(object message) => Debug.unityLogger.Log(Tag, message);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:21179e5f099e45f597a8907d981793378e8278334d444f311034f88d0c3e3259
+size 1387

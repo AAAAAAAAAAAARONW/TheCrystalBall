@@ -1,10 +1,3 @@
-namespace UnityEditor.Purchasing
-{
-    static class PurchasingUrls
-    {
-        internal const string analyticsApiUrl = "https://analytics.cloud.unity3d.com";
-        internal const string googlePlayDevConsoleUrl = "https://play.google.com/apps/publish/";
-
-        internal const string coreProjectsUrl = "https://core.cloud.unity3d.com/api/projects/{0}";
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9c03eae101ea5392c710caed1c477ced09654c93638b0e4ada5e87ae39f2a3e7
+size 365

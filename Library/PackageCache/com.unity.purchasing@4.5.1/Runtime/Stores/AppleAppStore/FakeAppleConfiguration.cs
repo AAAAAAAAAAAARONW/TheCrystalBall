@@ -1,22 +1,3 @@
-#nullable enable
-
-using System;
-using System.Collections.Generic;
-
-namespace UnityEngine.Purchasing
-{
-    class FakeAppleConfiguration : IAppleConfiguration
-    {
-        public string appReceipt => "This is a fake receipt. When running on an Apple store, a base64 encoded App Receipt would be returned";
-
-        public bool canMakePayments => true;
-
-        public void SetApplePromotionalPurchaseInterceptorCallback(Action<Product> callback)
-        {
-        }
-
-        public void SetEntitlementsRevokedListener(Action<List<Product>> callback)
-        {
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:06028026c111aa51d4743ad21ce18d54694830089e9f2be624608e20b2314a60
+size 577

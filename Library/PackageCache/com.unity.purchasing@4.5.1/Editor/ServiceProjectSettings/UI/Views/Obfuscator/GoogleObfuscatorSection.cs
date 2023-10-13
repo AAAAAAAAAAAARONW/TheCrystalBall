@@ -1,30 +1,3 @@
-using UnityEngine.UIElements;
-
-namespace UnityEditor.Purchasing
-{
-    class GoogleObfuscatorSection : AbstractObfuscatorSection
-    {
-        readonly GoogleConfigurationData m_GoogleConfigDataRef;
-
-        internal GoogleObfuscatorSection(GoogleConfigurationData googleData)
-            : base()
-        {
-            m_GoogleConfigDataRef = googleData;
-        }
-
-        protected override void ObfuscateKeys()
-        {
-            m_ErrorMessage = ObfuscationGenerator.ObfuscateGoogleSecrets(GetGoogleKey());
-        }
-
-        string GetGoogleKey()
-        {
-            return m_GoogleConfigDataRef.googlePlayKey;
-        }
-
-        protected override bool DoesTangleFileExist()
-        {
-            return ObfuscationGenerator.DoesGooglePlayTangleClassExist();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8a74b7f176dc996e6925f97cb47866f044b2ed8d8b20f0cb3df6f9535592cf28
+size 788

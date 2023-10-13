@@ -1,27 +1,3 @@
-using System;
-using Unity.Services.Core.Internal;
-#if UNITY_2020_2_OR_NEWER
-using UnityEngine.Scripting;
-#endif
-
-namespace Unity.Services.Core.Configuration.Internal
-{
-    /// <summary>
-    /// Component to provide external user ID, provided by a third party provider
-    /// </summary>
-#if UNITY_2020_2_OR_NEWER
-    [RequireImplementors]
-#endif
-    public interface IExternalUserId : IServiceComponent
-    {
-        /// <summary>
-        /// Get the external user id
-        /// </summary>
-        string UserId { get; }
-
-        /// <summary>
-        /// Event raised when the external id changed.
-        /// </summary>
-        event Action<string> UserIdChanged;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0f33f803092afec8ffa6d3dc4e852b077f9655d9bc957e48e75f9b26cf0e80d8
+size 675

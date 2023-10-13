@@ -1,28 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace UnityEngine.Purchasing
-{
-    internal static class QueryHelper
-    {
-        internal static string ToQueryString(this Dictionary<string, object> parameters)
-        {
-            var sb = new StringBuilder();
-
-            foreach (var key in parameters.Keys)
-            {
-                var val = parameters[key].ToString();
-
-                if (val == null)
-                {
-                    continue;
-                }
-
-                sb.Append(sb.Length == 0 ? "?" : "&");
-                sb.AppendFormat("{0}={1}", Uri.EscapeDataString(key), Uri.EscapeDataString(val));
-            }
-            return sb.ToString();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a7f5748ba9c24aae6455a9717131660dc501ccfc0911307b91e7b6aa02563a72
+size 726

@@ -1,11 +1,3 @@
-#nullable enable
-
-namespace UnityEngine.Purchasing.Interfaces
-{
-    interface IGoogleLastKnownProductService
-    {
-        string? LastKnownOldProductId { get; set; }
-        string? LastKnownProductId { get; set; }
-        GooglePlayProrationMode? LastKnownProrationMode { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:65db7d1d36aa2e0e86d0f2372bec137f7862a494ca3abb855b09e632cc763827
+size 294

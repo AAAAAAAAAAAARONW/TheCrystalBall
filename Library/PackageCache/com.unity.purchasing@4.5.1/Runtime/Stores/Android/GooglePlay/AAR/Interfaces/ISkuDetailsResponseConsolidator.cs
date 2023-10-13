@@ -1,9 +1,3 @@
-using System.Collections.Generic;
-using UnityEngine.Purchasing.Models;
-namespace UnityEngine.Purchasing.Interfaces
-{
-    interface ISkuDetailsResponseConsolidator
-    {
-        void Consolidate(IGoogleBillingResult billingResult, IEnumerable<AndroidJavaObject> skuDetails);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8cdc0663b5245f1c256d88cce3755652871ebd8d15642d658deff18490cb6c6c
+size 282

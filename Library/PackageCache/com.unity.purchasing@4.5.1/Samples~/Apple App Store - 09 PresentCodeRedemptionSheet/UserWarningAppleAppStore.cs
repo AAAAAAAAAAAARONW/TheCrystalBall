@@ -1,25 +1,3 @@
-using UnityEngine;
-using UnityEngine.Purchasing;
-using UnityEngine.UI;
-
-namespace Samples.Purchasing.AppleAppStore.PresentCodeRedemptionSheet
-{
-    public class UserWarningAppleAppStore : MonoBehaviour
-    {
-        public Text warningText;
-
-        public void UpdateWarningText()
-        {
-            var currentAppStore = StandardPurchasingModule.Instance().appStore;
-
-            var warningMessage = currentAppStore != AppStore.AppleAppStore ?
-                "This sample is meant to be tested using the Apple App Store.\n" +
-                $"The currently selected store is: {currentAppStore}.\n" +
-                "Build the project for iOS and use the Apple App Store.\n\n" +
-                "See README for more information and instructions on how to test this sample."
-                : "";
-
-            warningText.text = warningMessage;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:147b62c3d659cc5a11b0338a204ad9cd9b41eda5be605395fca1ee56da98fffc
+size 870

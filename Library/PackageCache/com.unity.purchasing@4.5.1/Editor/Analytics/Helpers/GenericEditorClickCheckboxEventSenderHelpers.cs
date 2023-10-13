@@ -1,21 +1,3 @@
-namespace UnityEditor.Purchasing
-{
-    static class GenericEditorClickCheckboxEventSenderHelpers
-    {
-        internal static void SendCatalogAutoInitToggleEvent(bool value)
-        {
-            BuildAndSendEvent(EventComponents.k_ComponentCodeless, EventTools.k_ToolCatalog, EventUINames.k_UINameAutoInit, value);
-        }
-
-        internal static void SendCatalogUgsAutoInitToggleEvent(bool value)
-        {
-            BuildAndSendEvent(EventComponents.k_ComponentCodeless, EventTools.k_ToolCatalog, EventUINames.k_UINameUgsAutoInit, value);
-        }
-
-        static void BuildAndSendEvent(string component, string tool, string name, bool value)
-        {
-            var newEvent = new GenericEditorClickCheckboxEvent(component, tool, name, value);
-            PurchasingServiceAnalyticsSender.SendEvent(newEvent);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:66228b3cf2ea416f79db49092f19c047803be93b6ef75a94a2a6ca4c8110d853
+size 841

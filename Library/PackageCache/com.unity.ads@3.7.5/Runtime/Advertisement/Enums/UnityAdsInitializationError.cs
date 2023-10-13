@@ -1,23 +1,3 @@
-namespace UnityEngine.Advertisements {
-    public enum UnityAdsInitializationError {
-        /// <summary>
-        /// Default value / Used when no mapping available
-        /// </summary>
-        UNKNOWN,
-
-        /// <summary>
-        /// Error related to environment or internal services
-        /// </summary>
-        INTERNAL_ERROR,
-
-        /// <summary>
-        /// Error related to invalid arguments
-        /// </summary>
-        INVALID_ARGUMENT,
-
-        /// <summary>
-        /// Error related to url being blocked
-        /// </summary>
-        AD_BLOCKER_DETECTED
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ecc36f121707923f30753fd370fadd9a88a858498897d1541108c30a1317422
+size 586

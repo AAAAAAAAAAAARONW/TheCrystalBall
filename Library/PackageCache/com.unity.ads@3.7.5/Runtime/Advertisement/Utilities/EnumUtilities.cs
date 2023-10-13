@@ -1,26 +1,3 @@
-using System;
-
-namespace UnityEngine.Advertisements.Utilities {
-    public static class EnumUtilities {
-        public static ShowResult GetShowResultsFromCompletionState(UnityAdsShowCompletionState showCompletionState) {
-            switch (showCompletionState) {
-                case UnityAdsShowCompletionState.COMPLETED:
-                    return ShowResult.Finished;
-                case UnityAdsShowCompletionState.SKIPPED:
-                    return ShowResult.Skipped;
-                default:
-                    return ShowResult.Failed;
-            }
-        }
-
-        public static T GetEnumFromAndroidJavaObject<T>(AndroidJavaObject androidJavaObject, T defaultValue) {
-            try {
-                return (T) Enum.Parse(typeof(T), androidJavaObject.Call<string>("toString"), true);
-            } catch (Exception) {
-                Debug.LogError("Unable to map native enum to managed enum");
-            }
-
-            return defaultValue;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:27d5149202f01aba62730a1abeb356c9c4175216b58702ed036a4997d87197f5
+size 980

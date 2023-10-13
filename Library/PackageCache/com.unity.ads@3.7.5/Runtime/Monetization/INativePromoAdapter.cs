@@ -1,17 +1,3 @@
-namespace UnityEngine.Monetization
-{
-    public enum PromoShowType
-    {
-        Preview,
-        Full
-    }
-
-    public interface INativePromoAdapter
-    {
-        PromoMetadata metadata { get; }
-        void OnShown();
-        void OnShown(PromoShowType type);
-        void OnClosed();
-        void OnClicked();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:018e03521fbaffccf78a7b4d45f045e225363dc58c43af8345fab274bb02ac7f
+size 322

@@ -1,20 +1,3 @@
-using System;
-
-namespace UnityEngine.Advertisements
-{
-    /// <summary>
-    /// A collection of options that you can pass to <c>Advertisement.Show</c>, to modify ad behaviour. Use <c>ShowOptions.resultCallback</c> to pass a <a>ShowResult</a> enum back to <c>Show</c> when the ad finishes.
-    /// </summary>
-    public class ShowOptions
-    {
-        /// <summary>
-        /// A callback to receive the result of the ad.
-        /// </summary>
-        [Obsolete("Implement IUnityAdsListener and call Advertisement.AddListener()")]
-        public Action<ShowResult> resultCallback { get; set; }
-        /// <summary>
-        /// Add a string to specify an identifier for a specific user in the game.
-        /// </summary>
-        public string gamerSid { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea43766b33f0b7e3ca7d3d478116c47011f2c8c75c2b5e66481bbd2f112545f2
+size 775

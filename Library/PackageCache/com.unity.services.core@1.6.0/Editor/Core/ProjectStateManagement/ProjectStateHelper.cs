@@ -1,24 +1,3 @@
-namespace Unity.Services.Core.Editor
-{
-    class ProjectStateHelper : IProjectStateHelper
-    {
-        public bool IsProjectOnlyPartiallyBound(ProjectState projectState)
-        {
-            return projectState.ProjectBound && string.IsNullOrWhiteSpace(projectState.OrganizationId);
-        }
-
-        public bool IsProjectBeingBound(ProjectState? previousProjectState, ProjectState currentProjectState)
-        {
-            return (!previousProjectState.HasValue
-                    || !previousProjectState.Value.ProjectBound)
-                && currentProjectState.ProjectBound;
-        }
-
-        public bool IsProjectBeingUnbound(ProjectState? cachedProjectState, ProjectState currentProjectState)
-        {
-            return (!cachedProjectState.HasValue
-                    || cachedProjectState.Value.ProjectBound)
-                && !currentProjectState.ProjectBound;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:968b874f77005e3930bf53d8d1e15e4be5da0ba3d28b9b502b53b9a1dcf40d1a
+size 899

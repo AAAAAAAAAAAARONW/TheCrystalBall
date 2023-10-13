@@ -1,23 +1,3 @@
-using System;
-using System.Collections.Generic;
-using UnityEngine.Purchasing.Models;
-using UnityEngine.Purchasing.Utils;
-
-namespace UnityEngine.Purchasing.Interfaces
-{
-    interface IGoogleBillingClient
-    {
-        void StartConnection(IBillingClientStateListener billingClientStateListener);
-        void EndConnection();
-        bool IsReady();
-        GoogleBillingConnectionState GetConnectionState();
-        void QueryPurchasesAsync(string skuType, Action<IGoogleBillingResult, IEnumerable<IAndroidJavaObjectWrapper>> onQueryPurchasesResponse);
-        void QuerySkuDetailsAsync(List<string> skus, string type, Action<IGoogleBillingResult, List<AndroidJavaObject>> onSkuDetailsResponseAction);
-        AndroidJavaObject LaunchBillingFlow(AndroidJavaObject sku, string oldPurchaseToken, GooglePlayProrationMode? prorationMode);
-        void ConsumeAsync(string purchaseToken, Action<IGoogleBillingResult> onConsume);
-        void AcknowledgePurchase(string purchaseToken, Action<IGoogleBillingResult> onAcknowledge);
-        void SetObfuscationAccountId(string obfuscationAccountId);
-        void SetObfuscationProfileId(string obfuscationProfileId);
-        void LaunchPriceChangeConfirmationFlow(AndroidJavaObject skuDetails, GooglePriceChangeConfirmationListener listener);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a947e3354959c0278cb7c70bef1f88337c6576b07b4284970ab6244154de2dd0
+size 1292

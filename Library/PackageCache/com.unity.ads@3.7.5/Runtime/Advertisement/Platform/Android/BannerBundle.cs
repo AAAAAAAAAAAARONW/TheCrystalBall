@@ -1,14 +1,3 @@
-namespace UnityEngine.Advertisements.Platform.Android
-{
-    internal class BannerBundle
-    {
-        public AndroidJavaObject bannerView { get; }
-        public string bannerPlacementId { get; }
-
-        public BannerBundle(string bannerPlacementId, AndroidJavaObject bannerView)
-        {
-            this.bannerPlacementId = bannerPlacementId;
-            this.bannerView = bannerView;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dbb67c8a23b445554ed091fd83e2cf567a1917758c6f73e2084d65fe4b3d727b
+size 407

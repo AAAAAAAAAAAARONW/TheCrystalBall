@@ -1,17 +1,3 @@
-using UnityEngine.Purchasing.Extension;
-
-namespace UnityEngine.Purchasing
-{
-    /// <summary>
-    /// Common interface for Universal Windows Platform configuration.
-    /// </summary>
-    public interface IMicrosoftConfiguration : IStoreConfiguration
-    {
-        /// <summary>
-        /// Whether or not to use the Mock Billing system in UWP builds.
-        /// If mock billing is used, the app can be tested before registering the app on the Windows Store.
-        /// App releases should not be shipped with this flag set to true.
-        /// </summary>
-        bool useMockBillingSystem { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4138bf60a0a6b321083aed4c91c87f01177c50f58bed762a03270dd7109a09a7
+size 614

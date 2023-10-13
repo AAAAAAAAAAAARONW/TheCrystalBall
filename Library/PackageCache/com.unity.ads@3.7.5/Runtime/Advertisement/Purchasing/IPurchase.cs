@@ -1,16 +1,3 @@
-#if UNITY_ANDROID
-using System;
-
-namespace UnityEngine.Advertisements.Purchasing
-{
-    internal interface IPurchase
-    {
-        void Initialize(IPurchasingEventSender platform);
-        void SendEvent(string payload);
-        void onPurchasingCommand(String eventString);
-        void onGetPurchasingVersion();
-        void onGetProductCatalog();
-        void onInitializePurchasing();
-    }
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:8fcde8b43a3a8bfb7449440b02b753c940f0c435230e04aade6149ef0335f2db
+size 403

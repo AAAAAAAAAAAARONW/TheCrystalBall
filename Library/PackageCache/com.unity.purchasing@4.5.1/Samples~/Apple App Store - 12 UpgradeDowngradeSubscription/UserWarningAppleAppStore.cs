@@ -1,26 +1,3 @@
-using UnityEngine;
-using UnityEngine.Purchasing;
-using UnityEngine.UI;
-
-namespace Samples.Purchasing.AppleAppStore.UpgradeDowngradeSubscription
-{
-    public class UserWarningAppleAppStore : MonoBehaviour
-    {
-        public Text warningText;
-
-        public void UpdateWarningText()
-        {
-            var currentAppStore = StandardPurchasingModule.Instance().appStore;
-
-            var warningMessage = currentAppStore != AppStore.AppleAppStore
-                && currentAppStore != AppStore.MacAppStore ?
-                "This sample is meant to be tested using the Apple App Store.\n" +
-                $"The currently selected store is: {currentAppStore}.\n" +
-                "Build the project for iOS, tvOS, or macOS.\n\n" +
-                "See README for more information and instructions on how to test this sample."
-                : "";
-
-            warningText.text = warningMessage;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea3b935a668d99fc989312fb78f021e5ff5534a91298691e4749fb7b8a606e64
+size 919

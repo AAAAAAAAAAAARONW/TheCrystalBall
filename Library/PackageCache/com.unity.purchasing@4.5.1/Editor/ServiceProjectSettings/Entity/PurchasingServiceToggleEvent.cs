@@ -1,25 +1,3 @@
-using System;
-namespace UnityEditor.Purchasing
-{
-    /// <summary>
-    /// This is an internal API.
-    /// We recommend that you do not use it as it will be removed in a future release.
-    /// </summary>
-    [Obsolete("Internal API, it will be removed soon.")]
-    public enum PurchasingServiceToggleEvent
-    {
-        /// <summary>
-        /// This is an internal API.
-        /// We recommend that you do not use it as it will be removed in a future release.
-        /// </summary>
-        [Obsolete("Internal API, it will be removed soon.")]
-        Disabled,
-
-        /// <summary>
-        /// This is an internal API.
-        /// We recommend that you do not use it as it will be removed in a future release.
-        /// </summary>
-        [Obsolete("Internal API, it will be removed soon.")]
-        Enabled
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:af1f6be2005f0a671f4530f6f9ab301534dacf7b62cbb5fc5a7511984915e2a7
+size 825

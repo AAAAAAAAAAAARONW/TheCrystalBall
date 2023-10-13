@@ -1,19 +1,3 @@
-using System;
-
-namespace UnityEngine.Advertisements.Platform.Unsupported
-{
-    internal class UnsupportedBanner : INativeBanner
-    {
-        public bool IsLoaded => false;
-
-        public void SetupBanner(IBanner banner) {}
-
-        public void Load(string placementId, BannerLoadOptions loadOptions) {}
-
-        public void Show(string placementId, BannerOptions showOptions) {}
-
-        public void Hide(bool destroy = false) {}
-
-        public void SetPosition(BannerPosition position) {}
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c091a1931471d85852caa733460096968ca865fb5b6b393643c8d79b253e0e0
+size 501

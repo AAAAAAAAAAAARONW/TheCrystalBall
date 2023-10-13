@@ -1,25 +1,3 @@
-using System;
-
-namespace UnityEngine.Purchasing.Security
-{
-    /// <summary>
-    /// Represents a parsed purchase receipt from a store.
-    /// </summary>
-    public interface IPurchaseReceipt
-    {
-        /// <summary>
-        /// The ID of the transaction.
-        /// </summary>
-        string transactionID { get; }
-
-        /// <summary>
-        /// The ID of the product purchased.
-        /// </summary>
-        string productID { get; }
-
-        /// <summary>
-        /// The date fof the purchase.
-        /// </summary>
-        DateTime purchaseDate { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ffcedef897455fe66ca82953a28b75d66b0c17a5ab82460aff730f02b2a74d4e
+size 578

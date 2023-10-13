@@ -1,25 +1,3 @@
-#nullable enable
-
-using System.Collections.Generic;
-using UnityEngine.Purchasing.Utils;
-
-namespace UnityEngine.Purchasing.Interfaces
-{
-    internal interface IGooglePurchase
-    {
-        IAndroidJavaObjectWrapper javaPurchase { get; }
-        int purchaseState { get; }
-        List<string> skus { get; }
-        string orderId { get; }
-        string receipt { get; }
-        string signature { get; }
-        string originalJson { get; }
-        string purchaseToken { get; }
-        string? sku { get; }
-
-        bool IsAcknowledged();
-
-        bool IsPurchased();
-        bool IsPending();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a826b3b4936ade6cc0af0dd1be45f438bd83d11af5696e2595f1feb9eba512e
+size 603

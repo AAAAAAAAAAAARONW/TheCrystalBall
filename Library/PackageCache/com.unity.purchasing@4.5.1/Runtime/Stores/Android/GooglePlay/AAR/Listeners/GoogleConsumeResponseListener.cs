@@ -1,29 +1,3 @@
-using System;
-using System.Collections.Generic;
-using UnityEngine.Purchasing.Models;
-using UnityEngine.Scripting;
-
-namespace UnityEngine.Purchasing
-{
-    /// <summary>
-    /// This is C# representation of the Java Class ConsumeResponseListener
-    /// <a href="https://developer.android.com/reference/com/android/billingclient/api/ConsumeResponseListener">See more</a>
-    /// </summary>
-    class GoogleConsumeResponseListener : AndroidJavaProxy
-    {
-        const string k_AndroidConsumeResponseListenerClassName = "com.android.billingclient.api.ConsumeResponseListener";
-        readonly Action<IGoogleBillingResult> m_OnConsumeResponse;
-
-        internal GoogleConsumeResponseListener(Action<IGoogleBillingResult> onConsumeResponseAction)
-            : base(k_AndroidConsumeResponseListenerClassName)
-        {
-            m_OnConsumeResponse = onConsumeResponseAction;
-        }
-
-        [Preserve]
-        void onConsumeResponse(AndroidJavaObject billingResult, string purchaseToken)
-        {
-            m_OnConsumeResponse(new GoogleBillingResult(billingResult));
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:612ce9124f9574cdee860608547c41b5d559decc6ebbb5d8d7ff3de24697eab4
+size 1092

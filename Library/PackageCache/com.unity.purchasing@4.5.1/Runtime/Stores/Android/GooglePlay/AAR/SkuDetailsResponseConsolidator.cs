@@ -1,32 +1,3 @@
-using System;
-using System.Collections.Generic;
-using UnityEngine.Purchasing.Interfaces;
-using UnityEngine.Purchasing.Models;
-
-namespace UnityEngine.Purchasing
-{
-    class SkuDetailsResponseConsolidator : ISkuDetailsResponseConsolidator
-    {
-        const int k_RequiredNumberOfCallbacks = 2;
-        int m_NumberReceivedCallbacks;
-        readonly Action<ISkuDetailsQueryResponse> m_OnSkuDetailsResponseConsolidated;
-        readonly ISkuDetailsQueryResponse m_Responses = new SkuDetailsQueryResponse();
-
-        internal SkuDetailsResponseConsolidator(Action<ISkuDetailsQueryResponse> onSkuDetailsResponseConsolidated)
-        {
-            m_OnSkuDetailsResponseConsolidated = onSkuDetailsResponseConsolidated;
-        }
-
-        public void Consolidate(IGoogleBillingResult billingResult, IEnumerable<AndroidJavaObject> skuDetails)
-        {
-            m_NumberReceivedCallbacks++;
-
-            m_Responses.AddResponse(billingResult, skuDetails);
-
-            if (m_NumberReceivedCallbacks >= k_RequiredNumberOfCallbacks)
-            {
-                m_OnSkuDetailsResponseConsolidated(m_Responses);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:96236fd0b5b12da0b5f1b1605ef32774b96cc854cbaaeeb315ca26e831755143
+size 1139

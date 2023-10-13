@@ -1,17 +1,3 @@
-namespace UnityEngine.Purchasing
-{
-    static class LoggerExtensions
-    {
-        const string IAPLogTag = "Unity IAP";
-
-        public static void LogIAPWarning(this ILogger logger, string message)
-        {
-            logger.LogWarning(IAPLogTag, message);
-        }
-
-        public static void LogIAPError(this ILogger logger, string message)
-        {
-            logger.LogError(IAPLogTag, message);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4513ab47c454eb30cc9e78decd1f458504b8b1025e52e89306a758f2a354fdb6
+size 425

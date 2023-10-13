@@ -1,25 +1,3 @@
-namespace Unity.Services.Core.Editor.OrganizationHandler
-{
-    /// <summary>
-    /// Helper class to get information of the current organization.
-    /// </summary>
-    public static class OrganizationProvider
-    {
-        static IOrganizationHandler s_OrganizationHandler = new OrganizationHandler();
-
-        /// <summary>
-        /// Current organization info.
-        /// </summary>
-        public static IOrganizationHandler Organization
-        {
-            get => s_OrganizationHandler;
-            set
-            {
-                if (value != null)
-                {
-                    s_OrganizationHandler = value;
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f84dc8ebc38a2df7be75e7eaaf2dbf142d6c8520182366825538dffeaca646e1
+size 680

@@ -1,22 +1,3 @@
-using System;
-using UnityEngine.Networking;
-
-namespace UnityEditor.Purchasing
-{
-    /// <summary>
-    /// This is an internal API.
-    /// We recommend that you do not use it as it will be removed in a future release.
-    /// </summary>
-    [Obsolete("Internal API, it will be removed soon.")]
-    public interface IWebRequest
-    {
-        /// <summary>
-        /// This is an internal API.
-        /// We recommend that you do not use it as it will be removed in a future release.
-        /// </summary>
-        /// <param name="uri"></param>
-        /// <returns></returns>
-        [Obsolete("Internal API, it will be removed soon.")]
-        UnityWebRequest BuildWebRequest(string uri);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:981f80d9c5f49930a2057edd9d8e72212af5ba58804fd98ce128b2905d6f135f
+size 699

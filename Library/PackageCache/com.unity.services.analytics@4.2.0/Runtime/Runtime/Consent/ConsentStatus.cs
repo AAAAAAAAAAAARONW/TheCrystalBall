@@ -1,14 +1,3 @@
-namespace Unity.Services.Analytics.Internal
-{
-    enum ConsentStatus
-    {
-        Unknown = 0, //required consents were not checked with GeoIP lookup
-        Forgetting = 1, //in the process of opting out
-        OptedOut = 2, //opted out, ForgetMe event sent to the backend
-        NotRequired = 3, //explicit user consent is not required
-        RequiredButUnchecked = 4, //explicit user consent is required
-        ConsentGiven = 5, //user gave the consent
-        ConsentDenied = 6 //user denied the consent - no consent was given at any point,
-                          //no ForgetMe event was sent to the backend
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9c0762d8ac82c7cfeafe4a051c7ad7e120a83c5938ebd5ca69cb41ab54adc348
+size 628

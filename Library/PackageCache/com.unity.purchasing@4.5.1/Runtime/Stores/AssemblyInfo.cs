@@ -1,8 +1,3 @@
-using System.Reflection;
-using System.Runtime.CompilerServices;
-
-[assembly: InternalsVisibleTo("UnityEditor.Purchasing")]
-[assembly: InternalsVisibleTo("UnityEditor.Purchasing.EditorTests")]
-[assembly: InternalsVisibleTo("UnityEngine.Purchasing.RuntimeTests")]
-//Needed for Moq to generate mocks from internal interfaces
-[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
+version https://git-lfs.github.com/spec/v1
+oid sha256:c324b75793738982188941c224a4e0d39816183b8db84374074a49933c0d3c52
+size 380

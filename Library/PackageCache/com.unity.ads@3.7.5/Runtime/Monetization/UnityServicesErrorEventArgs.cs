@@ -1,23 +1,3 @@
-using System;
-
-namespace UnityEngine.Monetization
-{
-    public class UnityServicesErrorEventArgs : EventArgs
-    {
-        // error is not mapped to an enum as it is not exposed to public API, can be changed later
-        public long error { get; private set; }
-        public string message { get; private set; }
-
-        public UnityServicesErrorEventArgs(string message)
-        {
-            error = -1;
-            this.message = message;
-        }
-
-        public UnityServicesErrorEventArgs(long error, string message)
-        {
-            this.error = error;
-            this.message = message;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b1181ca452e98ea129d9747ec79311f2ffa2e0f7b04c666c61977b2c1103f1e2
+size 622

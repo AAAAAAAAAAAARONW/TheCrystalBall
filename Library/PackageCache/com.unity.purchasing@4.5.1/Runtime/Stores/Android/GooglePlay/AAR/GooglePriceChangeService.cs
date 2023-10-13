@@ -1,29 +1,3 @@
-using System;
-using UnityEngine.Purchasing.Interfaces;
-using UnityEngine.Purchasing.Models;
-
-namespace UnityEngine.Purchasing
-{
-    class GooglePriceChangeService : IGooglePriceChangeService
-    {
-        readonly IGoogleBillingClient m_BillingClient;
-        readonly IQuerySkuDetailsService m_QuerySkuDetailsService;
-
-        internal GooglePriceChangeService(IGoogleBillingClient billingClient, IQuerySkuDetailsService querySkuDetailsService)
-        {
-            m_BillingClient = billingClient;
-            m_QuerySkuDetailsService = querySkuDetailsService;
-        }
-
-        public void PriceChange(ProductDefinition product, Action<IGoogleBillingResult> onPriceChangedListener)
-        {
-            m_QuerySkuDetailsService.QueryAsyncSku(product, skuDetailsList =>
-            {
-                foreach (var skuDetails in skuDetailsList)
-                {
-                    m_BillingClient.LaunchPriceChangeConfirmationFlow(skuDetails, new GooglePriceChangeConfirmationListener(onPriceChangedListener));
-                }
-            });
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7a18fc45597f30aacd3a7bf08bbdb723e443a4581979ff4dd0015f01d65c192a
+size 1068

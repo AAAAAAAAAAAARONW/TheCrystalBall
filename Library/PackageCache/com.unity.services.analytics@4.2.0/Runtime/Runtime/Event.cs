@@ -1,18 +1,3 @@
-using UnityEngine;
-
-namespace Unity.Services.Analytics.Internal
-{
-    public class Event
-    {
-        public Event(string name, int? version)
-        {
-            Name = name;
-            Version = version;
-            Parameters = new EventData();
-        }
-
-        public EventData Parameters { get; private set; }
-        public string Name { get; private set; }
-        public int? Version { get; private set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:66cbebfe4ad1888b6f4f9bc94f06b2c6e8accbbc4ae6f4c4162a5ef1107feb9c
+size 427

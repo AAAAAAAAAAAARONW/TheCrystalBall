@@ -1,14 +1,3 @@
-#if UNITY_ANDROID
-using System;
-
-namespace UnityEngine.Monetization
-{
-    public class JavaEnumUtilities
-    {
-        public static int GetEnumOrdinal(AndroidJavaObject javaEnumObject)
-        {
-            return javaEnumObject.Call<int>("ordinal");
-        }
-    }
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:7ebc7c4868714534eb2c4754df7ed162cbbb627aa1af38c3d6ab4ce5fc44ac53
+size 277

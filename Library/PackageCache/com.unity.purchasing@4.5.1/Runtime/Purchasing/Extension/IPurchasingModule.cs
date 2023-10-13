@@ -1,18 +1,3 @@
-namespace UnityEngine.Purchasing.Extension
-{
-    /// <summary>
-    /// Configures Unity Purchasing for one or more
-    /// stores.
-    ///
-    /// Store implementations must provide an
-    /// implementation of this interface.
-    /// </summary>
-    public interface IPurchasingModule
-    {
-        /// <summary>
-        /// Configures the purchasing module.
-        /// </summary>
-        /// <param name="binder"> The object binding the purchasing with store implementations </param>
-        void Configure(IPurchasingBinder binder);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0f190adf7af1406e9ade1b641216a4d8786f2e6ba853b5d25ced450b364e35a5
+size 544

@@ -1,31 +1,3 @@
-#if SERVICES_SDK_CORE_ENABLED
-using UnityEngine.UIElements;
-
-namespace UnityEngine.Advertisements.Editor
-{
-    class GettingStartedUi : VisualElement
-    {
-        public GettingStartedUi()
-        {
-            var container = UiUtils.GetUiFromTemplate(UiConstants.UiTemplatePaths.GettingStarted);
-            if (container is null)
-            {
-                var message = string.Format(
-                    UiConstants.Formats.TemplateNotFound, nameof(UiConstants.UiTemplatePaths.GettingStarted));
-                Debug.LogError(message);
-                return;
-            }
-
-            Add(container);
-
-            container.AddOnClickedForElement(OnLearnMoreClicked, UiConstants.UiElementNames.LearnMoreLink);
-        }
-
-        static void OnLearnMoreClicked()
-        {
-            EditorGameServiceAnalyticsSender.SendProjectSettingsLearnMoreEvent();
-            Application.OpenURL(UiConstants.Urls.LearnMore);
-        }
-    }
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:370a7387c71d696cae31ce3d2a2f830b31785fa9030ab5d99f1a7a085cc050d3
+size 951

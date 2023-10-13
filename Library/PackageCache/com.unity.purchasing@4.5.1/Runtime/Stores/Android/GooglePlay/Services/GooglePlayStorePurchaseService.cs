@@ -1,18 +1,3 @@
-using UnityEngine.Purchasing.Interfaces;
-
-namespace UnityEngine.Purchasing
-{
-    class GooglePlayStorePurchaseService : IGooglePlayStorePurchaseService
-    {
-        readonly IGooglePlayStoreService m_GooglePlayStoreService;
-        internal GooglePlayStorePurchaseService(IGooglePlayStoreService googlePlayStoreService)
-        {
-            m_GooglePlayStoreService = googlePlayStoreService;
-        }
-
-        public void Purchase(ProductDefinition product)
-        {
-            m_GooglePlayStoreService.Purchase(product);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0546c033c98f6e3a767d8e8bdefb74cc4f0d8d802da1e11a321b0485b0c5547a
+size 545

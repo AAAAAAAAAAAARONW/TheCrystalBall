@@ -1,16 +1,3 @@
-namespace UnityEngine.Purchasing.Models
-{
-    /// <summary>
-    /// Values from Java Class BillingResponseCode
-    /// <a href="https://developer.android.com/reference/com/android/billingclient/api/BillingClient.BillingResponseCode">See more</a>
-    /// </summary>
-    enum GoogleBillingResponseCode
-    {
-        Ok = 0,
-        UserCanceled = 1,
-        ServiceUnavailable = 2,
-        DeveloperError = 5,
-        FatalError = 6,
-        ItemAlreadyOwned = 7,
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dadf38e4f2e1af3f746d8dae0857ae40e24fe222258a4790c7b2b2860bbe2eee
+size 470

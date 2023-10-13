@@ -1,20 +1,3 @@
-using System;
-
-namespace UnityEngine.Purchasing.Default
-{
-    /// <summary>
-    /// A factory for creating stub WinRT Store objects.
-    /// </summary>
-    public class Factory
-    {
-        /// <summary>
-        /// Creates a <c>WinRTStore</c> objects.
-        /// </summary>
-        /// <param name="mocked"> Whether or not to use a mock store. </param>
-        /// <returns> The instance of the <c>WinRTStore</c> created</returns>
-        public static IWindowsIAP Create(bool mocked)
-        {
-            throw new NotImplementedException();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d5750294a3d10ac38d2f61b49e2108a0bf6143aa98eccedf701a5d43efb0ee91
+size 565

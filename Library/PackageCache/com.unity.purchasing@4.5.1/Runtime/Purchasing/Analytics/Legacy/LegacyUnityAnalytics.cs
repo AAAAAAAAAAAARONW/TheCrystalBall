@@ -1,23 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace UnityEngine.Purchasing
-{
-    class LegacyUnityAnalytics : ILegacyUnityAnalytics
-    {
-        public void SendTransactionEvent(string productId, Decimal amount, string currency, string receiptPurchaseData,
-            string signature)
-        {
-#if ENABLE_CLOUD_SERVICES_ANALYTICS
-            Analytics.Analytics.Transaction(productId, amount, currency, receiptPurchaseData, signature);
-#endif
-        }
-
-        public void SendCustomEvent(string name, Dictionary<string, object> data)
-        {
-#if ENABLE_CLOUD_SERVICES_ANALYTICS
-            Analytics.Analytics.CustomEvent(name, data);
-#endif
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:25ece9a90dc77b9367f24361a9751ba2965772486be10d5d5f2613814f5dd233
+size 675

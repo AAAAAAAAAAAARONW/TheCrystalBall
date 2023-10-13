@@ -1,22 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.Services.Analytics
-{
-    public struct Product
-    {
-        /// <summary>
-        /// (Optional) The real currency spent or received as part of this product
-        /// </summary>
-        public RealCurrency? RealCurrency;
-
-        /// <summary>
-        /// (Required) The virtual currencies spent or received as part of this product (can be an empty list if none)
-        /// </summary>
-        public List<VirtualCurrency> VirtualCurrencies;
-
-        /// <summary>
-        /// (Required) The items spent or received as part of this product (can be an empty list if none)
-        /// </summary>
-        public List<Item> Items;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0610d1710d5c0ebccc724bbddb3256fe3449e3d75a510c68b68e4713f82cbc64
+size 689

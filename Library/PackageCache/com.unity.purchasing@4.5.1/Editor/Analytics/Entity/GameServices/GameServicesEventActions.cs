@@ -1,13 +1,3 @@
-namespace UnityEditor.Purchasing
-{
-    static class GameServicesEventActions
-    {
-        internal const string k_ActionConfigure = "Configure";
-        internal const string k_ActionCreateIapButton = "CreateIapButton";
-        internal const string k_ActionCreateIapListener = "CreateIapListener";
-        internal const string k_ActionIapCatalog = "IapCatalog";
-        internal const string k_ActionReceiptValidationObfuscator = "ReceiptValidationObfuscator";
-        internal const string k_ActionSwitchStore = "SwitchStore";
-        internal const string k_ActionValidatePublicKey = "ValidatePublicKey";
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:afd19360d329f89e679a79b958e4fd8edfd8f4ed77fda27b2da92cd5ddf3caf8
+size 618

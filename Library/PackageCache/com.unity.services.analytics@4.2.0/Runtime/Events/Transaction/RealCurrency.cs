@@ -1,18 +1,3 @@
-using System;
-
-namespace Unity.Services.Analytics
-{
-    public struct RealCurrency
-    {
-        /// <summary>
-        /// The type of currency, for example GBP, USD, etc.
-        /// </summary>
-        public string RealCurrencyType;
-
-        /// <summary>
-        /// The amount of real currency, in the smallest unit applicable to that currency.
-        /// Use <c>AnalyticsService.Instance.ConvertCurrencyToMinorUnits</c> to calculate currency if required.
-        /// </summary>
-        public Int64 RealCurrencyAmount;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8762df706f4f8aeba7041c7f01284c2d94e3e261eef00c88b5646780752a1a3b
+size 533

@@ -1,22 +1,3 @@
-using System.Threading;
-using System.Threading.Tasks;
-using UnityEngine;
-
-namespace Unity.Services.Core
-{
-    static class UnityThreadUtils
-    {
-        static int s_UnityThreadId;
-
-        internal static TaskScheduler UnityThreadScheduler { get; private set; }
-
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-        static void CaptureUnityThreadInfo()
-        {
-            s_UnityThreadId = Thread.CurrentThread.ManagedThreadId;
-            UnityThreadScheduler = TaskScheduler.FromCurrentSynchronizationContext();
-        }
-
-        public static bool IsRunningOnUnityThread => Thread.CurrentThread.ManagedThreadId == s_UnityThreadId;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:da750591b9896be00677446f13c80e638d9ec8f3eb3ba86f12b92a0d365fcec8
+size 692

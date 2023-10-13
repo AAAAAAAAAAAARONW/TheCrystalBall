@@ -1,12 +1,3 @@
-using System.Collections.Generic;
-using UnityEngine.Purchasing.Models;
-
-namespace UnityEngine.Purchasing.Interfaces
-{
-    interface ISkuDetailsQueryResponse
-    {
-        void AddResponse(IGoogleBillingResult billingResult, IEnumerable<AndroidJavaObject> skuDetails);
-        List<AndroidJavaObject> SkuDetails();
-        bool IsRecoverable();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ec9411b22999a6b595739c74d702a634106b6bd8e3af32a273f585c25472bc1
+size 352

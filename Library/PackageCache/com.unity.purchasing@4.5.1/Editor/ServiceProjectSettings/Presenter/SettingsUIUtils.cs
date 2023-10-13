@@ -1,19 +1,3 @@
-using System;
-using UnityEngine.UIElements;
-
-namespace UnityEditor.Purchasing
-{
-    static class SettingsUIUtils
-    {
-        public static VisualElement CloneUIFromTemplate(string templatePath)
-        {
-            var template = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(templatePath);
-            if (template == null)
-            {
-                return null;
-            }
-
-            return template.CloneTree().contentContainer;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:870a682a346756c5b5c5f5da9776ffc2a12aee94ee7ff6defcbda2364ef4e234
+size 463

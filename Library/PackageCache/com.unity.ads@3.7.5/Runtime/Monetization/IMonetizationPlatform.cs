@@ -1,23 +1,3 @@
-using System;
-
-namespace UnityEngine.Monetization
-{
-    interface IMonetizationPlatform
-    {
-        event EventHandler<PlacementContentReadyEventArgs> OnPlacementContentReady;
-        event EventHandler<PlacementContentStateChangeEventArgs> OnPlacementContentStateChange;
-        event EventHandler<UnityServicesErrorEventArgs> onError;
-
-        bool isSupported { get; }
-        string version { get; }
-
-        void Initialize(string gameId, bool testMode);
-        void SetPurchasingAdapter(IPurchasingAdapter adapter);
-        bool IsReady(string placementID);
-
-        PlacementContent GetPlacementContent(string placementID);
-
-        INativePromoAdapter CreateNativePromoAdapter(PromoAdPlacementContent placementContent);
-        void SetMetaData(MetaData metaData);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:98f8bb1c1ecba083cb9b2b3ae76cfc0f053c4460b32e8bd8716bc52b89f7cfe7
+size 784

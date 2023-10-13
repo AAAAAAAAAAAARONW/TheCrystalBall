@@ -1,30 +1,3 @@
-using System;
-using Unity.Services.Core;
-using UnityEngine.Scripting;
-
-namespace Unity.Services.Analytics
-{
-    /// <summary>
-    /// Represents geolocation consent errors.  
-    /// </summary>
-    [Preserve]
-    public enum ConsentCheckExceptionReason
-    {
-        Unknown = 0,
-        DeserializationIssue = 1,
-        NoInternetConnection = 2,
-        InvalidConsentFlow = 3,
-        ConsentFlowNotKnown = 4,
-    }
-
-    public class ConsentCheckException : RequestFailedException
-    {
-        [Preserve] public ConsentCheckExceptionReason Reason { get; private set; }
-
-        public ConsentCheckException(ConsentCheckExceptionReason reason, int errorCode, string message, Exception innerException)
-            : base(errorCode, message, innerException)
-        {
-            Reason = reason;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:703f86395845ecd25a0c3ff82aec45fb371ac5fb25ae063a1b5548d9f66ef559
+size 816

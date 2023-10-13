@@ -1,18 +1,3 @@
-namespace UnityEngine.Advertisements {
-    public enum UnityAdsShowCompletionState {
-        /// <summary>
-        /// A state that indicates that the user skipped the ad.
-        /// </summary>
-        SKIPPED,
-
-        /// <summary>
-        /// A state that indicates that the ad was played entirely.
-        /// </summary>
-        COMPLETED,
-
-        /// <summary>
-        /// Default value / Used when no mapping available
-        /// </summary>
-        UNKNOWN
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2528ea92c7df2a4283fa38b7def0188434977ae67acf88d96e2835b8a9714206
+size 474

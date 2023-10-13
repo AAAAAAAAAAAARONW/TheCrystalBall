@@ -1,18 +1,3 @@
-using UnityEditor;
-
-namespace Unity.Services.Analytics.Editor
-{
-    [InitializeOnLoad]
-    class CoreStatsIntegration
-    {
-        static CoreStatsIntegration()
-        {
-#if ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT
-            UnityEditor.Analytics.AnalyticsSettings.OnRequireInBuildHandler += () =>
-            {
-                return true;
-            };
-#endif
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:57db2abdd1e7289a5a4bd3af82e4669f4e59187afb19e695b7badee4168c52ad
+size 389

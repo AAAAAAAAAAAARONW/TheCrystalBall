@@ -1,15 +1,3 @@
-namespace UnityEngine.Purchasing.Telemetry
-{
-    struct TelemetryMetricParams
-    {
-        internal TelemetryMetricTypes type;
-        internal string name;
-        internal double timeSeconds;
-        internal TelemetryMetricParams(TelemetryMetricTypes metricType, string metricName, double metricTimeSeconds)
-        {
-            type = metricType;
-            name = metricName;
-            timeSeconds = metricTimeSeconds;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e91676864cb607be6e5d7b4a73b7250f5e99f4474badbcdf23da80189e04f1a
+size 447

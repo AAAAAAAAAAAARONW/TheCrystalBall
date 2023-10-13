@@ -1,30 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace UnityEngine.Advertisements.Editor {
-    internal static class SkAdNetworkParser {
-        private static Dictionary<string, ISkAdNetworkParser> s_Parsers;
-
-        static SkAdNetworkParser() {
-            s_Parsers = new Dictionary<string, ISkAdNetworkParser> {
-                { SkAdNetworkFileExtension.XML, new SkAdNetworkXmlParser() },
-                { SkAdNetworkFileExtension.JSON, new SkAdNetworkJsonParser() },
-                { SkAdNetworkFileExtension.NONE, new SkAdNetworkUrlParser() }
-            };
-        }
-
-        public static ISkAdNetworkParser GetParser(string parserType)
-        {
-            try {
-                s_Parsers.TryGetValue(parserType, out var parser);
-                return parser;
-            }
-            catch (Exception) { }
-            return null;
-        }
-
-        public static IEnumerable<ISkAdNetworkParser> GetAllParsers() {
-            return s_Parsers.Values;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7839fc22bca73506abe82f953d15e0d1c41d69cfad6b5982ebe2f853ce2e15b7
+size 990

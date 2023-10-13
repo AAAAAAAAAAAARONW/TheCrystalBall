@@ -1,26 +1,3 @@
-namespace UnityEngine.Purchasing
-{
-    /// <summary>
-    /// Informs Unity Purchasing as to whether an Application
-    /// has finished processing a purchase.
-    /// </summary>
-    public enum PurchaseProcessingResult
-    {
-        /// <summary>
-        /// The application has finished processing the purchase.
-        ///
-        /// Unity Purchasing should not inform the application of this
-        /// transaction again.
-        /// </summary>
-        Complete,
-
-        /// <summary>
-        /// The application has not finished processing the purchase,
-        /// eg it is pushing it to a server asynchronously.
-        ///
-        /// Unity Purchasing should continue to send the application notifications
-        /// about this transaction when it starts.
-        /// </summary>
-        Pending
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ff6903f1ec1d24b899e0e7c8073538c519b44c8ec0ba96a778cdbc5fad3694f
+size 814

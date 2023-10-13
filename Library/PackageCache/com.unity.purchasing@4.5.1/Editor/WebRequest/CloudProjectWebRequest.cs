@@ -1,18 +1,3 @@
-using UnityEngine.Networking;
-
-namespace UnityEditor.Purchasing
-{
-    class CloudProjectWebRequest : IWebRequestInternal
-    {
-        const string k_AuthHeaderName = "AUTHORIZATION";
-        static readonly string k_AuthHeaderValue = $"Bearer {CloudProjectSettings.accessToken}";
-
-        UnityWebRequest IWebRequestInternal.BuildWebRequest(string uri)
-        {
-            var authSignatureRequest = UnityWebRequest.Get(uri);
-            authSignatureRequest.suppressErrorsToConsole = true;
-            authSignatureRequest.SetRequestHeader(k_AuthHeaderName, k_AuthHeaderValue);
-            return authSignatureRequest;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:83b6784cbcb12f7213eaf1812fb760bc7f453c9c47c3f5e850967df4f1b084d1
+size 641

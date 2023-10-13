@@ -1,26 +1,3 @@
-using System;
-using UnityEngine;
-using UnityEditor;
-using UnityEngine.Purchasing;
-using UnityEngine.UI;
-
-namespace Samples.Purchasing.Core.LocalReceiptValidation
-{
-    public class UserWarning : MonoBehaviour
-    {
-        public Text warningText;
-
-        public void Clear()
-        {
-            warningText.text = "";
-        }
-
-        public void WarnInvalidStore(AppStore currentAppStore)
-        {
-            var warningMsg = $"The cross-platform validator is not implemented for the currently selected store: {currentAppStore}. \n" +
-                             "Build the project for Android, iOS, macOS, or tvOS and use the Google Play Store or Apple App Store. See README for more information.";
-            Debug.LogWarning(warningMsg);
-            warningText.text = warningMsg;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d58c210adfbd792054260515bae39d7ff595fd9a29d6cb3f42d122668317361
+size 813

@@ -1,25 +1,3 @@
-#if UNITY_ANDROID
-using System;
-
-namespace UnityEngine.Monetization
-{
-    sealed class AndroidAnalytics : AndroidJavaProxy
-    {
-        readonly AndroidJavaClass m_UnityAnalytics;
-        void onAddExtras(String extras)
-        {
-            Analytics.SetAnalyticsEventExtra(extras);
-        }
-
-        public void Initialize()
-        {
-            m_UnityAnalytics.CallStatic("initialize", this);
-        }
-
-        public AndroidAnalytics() : base("com.unity3d.services.analytics.interfaces.IAnalytics")
-        {
-            m_UnityAnalytics = new AndroidJavaClass("com.unity3d.services.analytics.interfaces.Analytics");
-        }
-    }
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:82186ff710eac14a44396401e9232e95e7d687ab11516039d26c885993c5c46c
+size 651

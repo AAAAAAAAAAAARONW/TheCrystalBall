@@ -1,19 +1,3 @@
-using System;
-
-namespace UnityEngine.Purchasing
-{
-    class UnityActivity
-    {
-        const string k_AndroidClassName = "com.unity3d.player.UnityPlayer";
-
-        static AndroidJavaClass GetUnityPlayerClass()
-        {
-            return new AndroidJavaClass(k_AndroidClassName);
-        }
-
-        internal static AndroidJavaObject GetCurrentActivity()
-        {
-            return GetUnityPlayerClass().GetStatic<AndroidJavaObject>("currentActivity");
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:64bce5e07969d84a3716cc6206252430c5a022c1a9852bfae2ed36e0a4dbe49c
+size 474

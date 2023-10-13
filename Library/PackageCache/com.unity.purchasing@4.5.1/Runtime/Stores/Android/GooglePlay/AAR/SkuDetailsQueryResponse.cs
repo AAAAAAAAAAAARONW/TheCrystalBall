@@ -1,32 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine.Purchasing.Interfaces;
-using UnityEngine.Purchasing.Models;
-namespace UnityEngine.Purchasing
-{
-    class SkuDetailsQueryResponse : ISkuDetailsQueryResponse
-    {
-        readonly List<(IGoogleBillingResult, IEnumerable<AndroidJavaObject>)> m_Responses = new List<(IGoogleBillingResult, IEnumerable<AndroidJavaObject>)>();
-
-        public void AddResponse(IGoogleBillingResult billingResult, IEnumerable<AndroidJavaObject> skuDetails)
-        {
-            m_Responses.Add((billingResult, skuDetails));
-        }
-
-        public List<AndroidJavaObject> SkuDetails()
-        {
-            return m_Responses.Where(response => response.Item1.responseCode == GoogleBillingResponseCode.Ok)
-                .SelectMany(response => response.Item2).ToList();
-        }
-
-        public bool IsRecoverable()
-        {
-            return m_Responses.Select(response => response.Item1).Any(IsRecoverable);
-        }
-
-        static bool IsRecoverable(IGoogleBillingResult billingResult)
-        {
-            return billingResult.responseCode == GoogleBillingResponseCode.ServiceUnavailable || billingResult.responseCode == GoogleBillingResponseCode.DeveloperError;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:75605d819ce606513c16a2ebe99bbef71b068f758f379c72e3acab2d79c5e322
+size 1243

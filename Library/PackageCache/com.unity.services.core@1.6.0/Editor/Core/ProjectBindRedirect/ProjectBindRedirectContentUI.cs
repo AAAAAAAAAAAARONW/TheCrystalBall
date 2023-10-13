@@ -1,18 +1,3 @@
-using UnityEditor;
-using UnityEngine.UIElements;
-
-namespace Unity.Services.Core.Editor.ProjectBindRedirect
-{
-    static class ProjectBindRedirectContentUI
-    {
-        public static void Load(VisualElement parent)
-        {
-            var visualAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(
-                ProjectBindRedirectUiConstants.UxmlPath.Content);
-            if (visualAsset != null)
-            {
-                visualAsset.CloneTree(parent);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:117dcca9ede69463e6499af6da1ded2cba2927fbb1d0c627ecd5cfe231b6b941
+size 499

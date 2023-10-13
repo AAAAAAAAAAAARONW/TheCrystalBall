@@ -1,30 +1,3 @@
-using System;
-
-namespace UnityEngine.Purchasing
-{
-    /// <summary>
-    /// Type of the purchase payout.
-    /// </summary>
-    public enum PayoutType
-    {
-        /// <summary>
-        /// A payout that doesn't fit one of the other presumed categories. Specified by subtype and/or data in <c>Payout Definition</c>.
-        /// </summary>
-        Other,
-
-        /// <summary>
-        /// Currency. Usually of a specified quantity in <c>Payout Definition</c>.
-        /// </summary>
-        Currency,
-
-        /// <summary>
-        /// An Item. Specified by subtype and/or data in <c>Payout Definition</c>.
-        /// </summary>
-        Item,
-
-        /// <summary>
-        /// A Resource. Usually of a specified quantity, and specified by subtype and/or data in <c>Payout Definition</c>.
-        /// </summary>
-        Resource
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:01c64d2e893ccf0d6301612f2ebf94e134ab890ebf20d3b498d52b30ea3b12e9
+size 839

@@ -1,35 +1,3 @@
-using System;
-
-namespace UnityEngine.Purchasing
-{
-    /// <summary>
-    /// Internal Purchasing interface.
-    /// </summary>
-    internal interface IInternalStoreListener
-    {
-        /// <summary>
-        /// Purchasing failed to initialise for a non recoverable reason.
-        /// </summary>
-        void OnInitializeFailed(InitializationFailureReason error);
-
-        /// <summary>
-        /// A purchase succeeded.
-        /// </summary>
-        PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs e);
-
-        /// <summary>
-        /// A purchase failed with specified reason.
-        /// </summary>
-        void OnPurchaseFailed(Product i, PurchaseFailureReason p);
-
-        /// <summary>
-        /// Purchasing initialized successfully.
-        ///
-        /// The <c>IStoreController</c> is available for accessing
-        /// purchasing functionality.
-        ///
-        /// Initialized products will include receipts, if currently owned.
-        /// </summary>
-        void OnInitialized(IStoreController controller);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8384fa522111d96bab30ddbb87dfe5838b916ca69a4f983494b415226edc1703
+size 1047
