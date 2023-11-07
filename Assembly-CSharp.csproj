@@ -56,9 +56,9 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\RealTimeWaterSystem\RenderCubeMap.cs" />
     <Compile Include="Assets\RealTimeWaterSystem\CustomWater.cs" />
     <Compile Include="Assets\RealTimeWaterSystem\CustomWaterSphere.cs" />
-    <Compile Include="Assets\RealTimeWaterSystem\RenderCubeMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\RealTimeWaterSystem\WaterFinal.shader" />
