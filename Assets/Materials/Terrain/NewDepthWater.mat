@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NewDepthWater
+  m_Shader: {fileID: 4800000, guid: fb6290f07a64ee6449cd8ee6e4397c88, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpTex:
+        m_Texture: {fileID: 2800000, guid: 4d060e539a59e914095baffc0ca04c66, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cubemap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GTex:
+        m_Texture: {fileID: 2800000, guid: fec75e35b669a5c4a9bbe23acca3f075, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GrabTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RingTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaterTex:
+        m_Texture: {fileID: 2800000, guid: f9ce608c93ba0e94cb32c0867022c073, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _DepthMaxDistance: 1
+    - _Distortion: 10
+    - _FresnelPower: 0
+    - _Gloss: 2.42
+    - _Refract: 0.27
+    - _RingPower: 0
+    - _Specular: 0.3
+    - _WaterSpeed: 0.68
+    - _WaveXSpeed: 0.01
+    - _WaveYSpeed: 0.01
+    m_Colors:
+    - _DeepColor: {r: 0.086, g: 0.407, b: 1, a: 0.749}
+    - _Range: {r: 0.84, g: 9.48, b: 1, a: 1.58}
+    - _ShallowColor: {r: 0.325, g: 0.807, b: 0.971, a: 0.725}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
